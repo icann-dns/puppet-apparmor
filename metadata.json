@@ -1,0 +1,39 @@
+{
+  "name": "puppet-apparmor",
+  "version": "0.1.0",
+  "author": "b4ldr",
+  "summary": "A module to deploy provid apparmor helper functions",
+  "license": "Apache-2.0",
+  "source": "git://github.com/icann-dns/puppet-apparmor.git",
+  "project_page": "https://github.com/icann-dns/puppet-apparmor",
+  "issues_url": "https://github.com/icann-dns/puppet-apparmor/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "20.04",
+        "22.04",
+        "24.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 5.5.8 < 9.0.0"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 6.0.0 < 9.0.0"
+    }
+  ]
+}
