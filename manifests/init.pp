@@ -23,5 +23,4 @@ class apparmor (
       *       => $content,
     }
   }
-  return undef
 }
