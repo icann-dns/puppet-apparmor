@@ -3,7 +3,7 @@
 class apparmor (
   Hash[String, Apparmor::Local_override] $local_overrides = {},
 ) {
-  ensure_packages(['apparmor'])
+  ensure_packages(['apparmor', 'apparmor-profiles', 'apparmor-utils'])
   service { 'apparmor':
     ensure  => running,
     enable  => true,
