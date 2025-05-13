@@ -2,6 +2,7 @@
 # @param local_overrides A hash of local overrides for the apparmor class
 class apparmor (
   Hash[String, Apparmor::Local_override] $local_overrides = {},
+  # TODO: Need a notify service param
 ) {
   ensure_packages(['apparmor', 'apparmor-profiles', 'apparmor-utils'])
   service { 'apparmor':
